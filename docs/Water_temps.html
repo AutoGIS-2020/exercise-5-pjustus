@@ -23,7 +23,7 @@
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_15c4ffd0e23747659cf29ba200c9fab2 {
+                #map_beedfadd930645c59105388e2c77d478 {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -67,13 +67,16 @@
 </head>
 <body>    
     
-            <div class="folium-map" id="map_15c4ffd0e23747659cf29ba200c9fab2" ></div>
+             <h3 align="center" style="font-size:16px"><b>Water Temperatures in real-time by HRI, plotted by Justus Poutanen</b></h3>
+             
+    
+            <div class="folium-map" id="map_beedfadd930645c59105388e2c77d478" ></div>
         
 </body>
 <script>    
     
-            var map_15c4ffd0e23747659cf29ba200c9fab2 = L.map(
-                "map_15c4ffd0e23747659cf29ba200c9fab2",
+            var map_beedfadd930645c59105388e2c77d478 = L.map(
+                "map_beedfadd930645c59105388e2c77d478",
                 {
                     center: [60.25, 24.95],
                     crs: L.CRS.EPSG3857,
@@ -82,37 +85,37 @@
                     preferCanvas: false,
                 }
             );
-            L.control.scale().addTo(map_15c4ffd0e23747659cf29ba200c9fab2);
+            L.control.scale().addTo(map_beedfadd930645c59105388e2c77d478);
 
             
 
         
     
-            var tile_layer_43948b118f80439e8c435bc40c024c77 = L.tileLayer(
+            var tile_layer_000661e4d16d4a7ab3b025554d6d6062 = L.tileLayer(
                 "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
                 {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
-            ).addTo(map_15c4ffd0e23747659cf29ba200c9fab2);
+            ).addTo(map_beedfadd930645c59105388e2c77d478);
         
     
-        function geo_json_e44d30be5e234d118481f37630cda357_onEachFeature(feature, layer) {
+        function geo_json_19399c14502543258a8974b70cb8c291_onEachFeature(feature, layer) {
             layer.on({
                 click: function(e) {
-                    map_15c4ffd0e23747659cf29ba200c9fab2.fitBounds(e.target.getBounds());
+                    map_beedfadd930645c59105388e2c77d478.fitBounds(e.target.getBounds());
                 }
             });
         };
-        var geo_json_e44d30be5e234d118481f37630cda357 = L.geoJson(null, {
-                onEachFeature: geo_json_e44d30be5e234d118481f37630cda357_onEachFeature,
+        var geo_json_19399c14502543258a8974b70cb8c291 = L.geoJson(null, {
+                onEachFeature: geo_json_19399c14502543258a8974b70cb8c291_onEachFeature,
             
-        }).addTo(map_15c4ffd0e23747659cf29ba200c9fab2);
+        }).addTo(map_beedfadd930645c59105388e2c77d478);
 
-        function geo_json_e44d30be5e234d118481f37630cda357_add (data) {
-            geo_json_e44d30be5e234d118481f37630cda357.addData(data);
+        function geo_json_19399c14502543258a8974b70cb8c291_add (data) {
+            geo_json_19399c14502543258a8974b70cb8c291.addData(data);
         }
-            geo_json_e44d30be5e234d118481f37630cda357_add({"bbox": [24.61975, 60.12779699999998, 25.114849, 60.299039999999984], "features": [{"bbox": [24.983821, 60.22770399999999, 24.983821, 60.22770399999999], "geometry": {"coordinates": [24.983821, 60.22770399999999], "type": "Point"}, "id": "141223", "properties": {"dev-id": "70B3D57050001AB9", "name": "Pikkukosken uimaranta", "temp_out1": 2.62, "time": "03-12-2020 14:57"}, "type": "Feature"}, {"bbox": [25.114849, 60.20797699999997, 25.114849, 60.20797699999997], "geometry": {"coordinates": [25.114849, 60.20797699999997], "type": "Point"}, "id": "141225", "properties": {"dev-id": "70B3D57050001BBE", "name": "Rastilan uimaranta", "temp_out1": 3.56, "time": "03-12-2020 14:57"}, "type": "Feature"}, {"bbox": [24.915700199999996, 60.140587999999994, 24.915700199999996, 60.140587999999994], "geometry": {"coordinates": [24.915700199999996, 60.140587999999994], "type": "Point"}, "id": "141219", "properties": {"dev-id": "70B3D57050004D86", "name": "Pihlajasaari", "temp_out1": 5.25, "time": "03-12-2020 14:46"}, "type": "Feature"}, {"bbox": [24.898299999999995, 60.1715, 24.898299999999995, 60.1715], "geometry": {"coordinates": [24.898299999999995, 60.1715], "type": "Point"}, "id": "141221", "properties": {"dev-id": "70B3D57050004FB9", "name": "Hietaniemi (Ourit)", "temp_out1": 5.06, "time": "03-12-2020 14:47"}, "type": "Feature"}, {"bbox": [24.975317999999998, 60.17574200000001, 24.975317999999998, 60.17574200000001], "geometry": {"coordinates": [24.975317999999998, 60.17574200000001], "type": "Point"}, "id": "141224", "properties": {"dev-id": "70B3D57050004C07", "name": "Sompasauna", "temp_out1": 2.75, "time": "03-12-2020 14:57"}, "type": "Feature"}, {"bbox": [25.01586, 60.152319999999975, 25.01586, 60.152319999999975], "geometry": {"coordinates": [25.01586, 60.152319999999975], "type": "Point"}, "id": "141216", "properties": {"dev-id": "70B3D57050004DF8", "name": "Vasikkasaari", "temp_out1": 5.68, "time": "03-12-2020 14:36"}, "type": "Feature"}, {"bbox": [25.040119999999998, 60.185539999999996, 25.040119999999998, 60.185539999999996], "geometry": {"coordinates": [25.040119999999998, 60.185539999999996], "type": "Point"}, "id": "141222", "properties": {"dev-id": "70B3D57050004FE1", "name": "Herttoniemi (Tuorinniemen uimalaituri)", "temp_out1": 3.37, "time": "03-12-2020 14:54"}, "type": "Feature"}, {"bbox": [25.068599999999996, 60.180099999999996, 25.068599999999996, 60.180099999999996], "geometry": {"coordinates": [25.068599999999996, 60.180099999999996], "type": "Point"}, "id": "141226", "properties": {"dev-id": "70B3D57050004FE6", "name": "Vartiosaari (Reposalmen laituri)", "temp_out1": 3.87, "time": "03-12-2020 14:58"}, "type": "Feature"}, {"bbox": [25.076416, 60.198449, 25.076416, 60.198449], "geometry": {"coordinates": [25.076416, 60.198449], "type": "Point"}, "id": "141204", "properties": {"dev-id": "70B3D57050004E0E", "name": "Marjaniemen uimaranta", "temp_out1": 3.75, "time": "03-12-2020 14:10"}, "type": "Feature"}, {"bbox": [24.691871, 60.12779699999998, 24.691871, 60.12779699999998], "geometry": {"coordinates": [24.691871, 60.12779699999998], "type": "Point"}, "id": "141203", "properties": {"dev-id": "70B3D5705000504F", "name": "Hanikan uimaranta (Espoo)", "temp_out1": 4.0, "time": "03-12-2020 14:09"}, "type": "Feature"}, {"bbox": [24.880559999999996, 60.270259999999986, 24.880559999999996, 60.270259999999986], "geometry": {"coordinates": [24.880559999999996, 60.270259999999986], "type": "Point"}, "id": "141215", "properties": {"dev-id": "70B3D57050001BA6", "name": "Vetokannas (Vantaa)", "temp_out1": 3.5, "time": "03-12-2020 14:33"}, "type": "Feature"}, {"bbox": [24.930999999999997, 60.1523, 24.930999999999997, 60.1523], "geometry": {"coordinates": [24.930999999999997, 60.1523], "type": "Point"}, "id": "141209", "properties": {"dev-id": "70B3D57050005037", "name": "Eiranranta (L\u00f6yly)", "temp_out1": 5.5, "time": "03-12-2020 14:22"}, "type": "Feature"}, {"bbox": [24.61975, 60.299039999999984, 24.61975, 60.299039999999984], "geometry": {"coordinates": [24.61975, 60.299039999999984], "type": "Point"}, "id": "141218", "properties": {"dev-id": "70B3D5705000516A", "name": "Kattilaj\u00e4rvi (Espoo)", "temp_out1": 3.62, "time": "03-12-2020 14:41"}, "type": "Feature"}, {"bbox": [24.852409999999995, 60.160500000000006, 24.852409999999995, 60.160500000000006], "geometry": {"coordinates": [24.852409999999995, 60.160500000000006], "type": "Point"}, "id": "141202", "properties": {"dev-id": "70B3D57050001AF1", "name": "Lauttasaari (Vaskiniemi)", "temp_out1": 1.31, "time": "03-12-2020 14:08"}, "type": "Feature"}], "type": "FeatureCollection"});
+            geo_json_19399c14502543258a8974b70cb8c291_add({"bbox": [24.61975, 60.12779699999998, 25.114849, 60.299039999999984], "features": [{"bbox": [24.983821, 60.22770399999999, 24.983821, 60.22770399999999], "geometry": {"coordinates": [24.983821, 60.22770399999999], "type": "Point"}, "id": "141223", "properties": {"dev-id": "70B3D57050001AB9", "name": "Pikkukosken uimaranta", "temp_out1": 2.62, "time": "03-12-2020 14:57"}, "type": "Feature"}, {"bbox": [25.114849, 60.20797699999997, 25.114849, 60.20797699999997], "geometry": {"coordinates": [25.114849, 60.20797699999997], "type": "Point"}, "id": "141225", "properties": {"dev-id": "70B3D57050001BBE", "name": "Rastilan uimaranta", "temp_out1": 3.56, "time": "03-12-2020 14:57"}, "type": "Feature"}, {"bbox": [24.915700199999996, 60.140587999999994, 24.915700199999996, 60.140587999999994], "geometry": {"coordinates": [24.915700199999996, 60.140587999999994], "type": "Point"}, "id": "141219", "properties": {"dev-id": "70B3D57050004D86", "name": "Pihlajasaari", "temp_out1": 5.25, "time": "03-12-2020 14:46"}, "type": "Feature"}, {"bbox": [24.898299999999995, 60.1715, 24.898299999999995, 60.1715], "geometry": {"coordinates": [24.898299999999995, 60.1715], "type": "Point"}, "id": "141221", "properties": {"dev-id": "70B3D57050004FB9", "name": "Hietaniemi (Ourit)", "temp_out1": 5.06, "time": "03-12-2020 14:47"}, "type": "Feature"}, {"bbox": [24.975317999999998, 60.17574200000001, 24.975317999999998, 60.17574200000001], "geometry": {"coordinates": [24.975317999999998, 60.17574200000001], "type": "Point"}, "id": "141224", "properties": {"dev-id": "70B3D57050004C07", "name": "Sompasauna", "temp_out1": 2.75, "time": "03-12-2020 14:57"}, "type": "Feature"}, {"bbox": [25.01586, 60.152319999999975, 25.01586, 60.152319999999975], "geometry": {"coordinates": [25.01586, 60.152319999999975], "type": "Point"}, "id": "141216", "properties": {"dev-id": "70B3D57050004DF8", "name": "Vasikkasaari", "temp_out1": 5.68, "time": "03-12-2020 14:36"}, "type": "Feature"}, {"bbox": [25.040119999999998, 60.185539999999996, 25.040119999999998, 60.185539999999996], "geometry": {"coordinates": [25.040119999999998, 60.185539999999996], "type": "Point"}, "id": "141222", "properties": {"dev-id": "70B3D57050004FE1", "name": "Herttoniemi (Tuorinniemen uimalaituri)", "temp_out1": 3.37, "time": "03-12-2020 14:54"}, "type": "Feature"}, {"bbox": [25.068599999999996, 60.180099999999996, 25.068599999999996, 60.180099999999996], "geometry": {"coordinates": [25.068599999999996, 60.180099999999996], "type": "Point"}, "id": "141226", "properties": {"dev-id": "70B3D57050004FE6", "name": "Vartiosaari (Reposalmen laituri)", "temp_out1": 3.87, "time": "03-12-2020 14:58"}, "type": "Feature"}, {"bbox": [25.076416, 60.198449, 25.076416, 60.198449], "geometry": {"coordinates": [25.076416, 60.198449], "type": "Point"}, "id": "141204", "properties": {"dev-id": "70B3D57050004E0E", "name": "Marjaniemen uimaranta", "temp_out1": 3.75, "time": "03-12-2020 14:10"}, "type": "Feature"}, {"bbox": [24.691871, 60.12779699999998, 24.691871, 60.12779699999998], "geometry": {"coordinates": [24.691871, 60.12779699999998], "type": "Point"}, "id": "141203", "properties": {"dev-id": "70B3D5705000504F", "name": "Hanikan uimaranta (Espoo)", "temp_out1": 4.0, "time": "03-12-2020 14:09"}, "type": "Feature"}, {"bbox": [24.880559999999996, 60.270259999999986, 24.880559999999996, 60.270259999999986], "geometry": {"coordinates": [24.880559999999996, 60.270259999999986], "type": "Point"}, "id": "141215", "properties": {"dev-id": "70B3D57050001BA6", "name": "Vetokannas (Vantaa)", "temp_out1": 3.5, "time": "03-12-2020 14:33"}, "type": "Feature"}, {"bbox": [24.930999999999997, 60.1523, 24.930999999999997, 60.1523], "geometry": {"coordinates": [24.930999999999997, 60.1523], "type": "Point"}, "id": "141209", "properties": {"dev-id": "70B3D57050005037", "name": "Eiranranta (L\u00f6yly)", "temp_out1": 5.5, "time": "03-12-2020 14:22"}, "type": "Feature"}, {"bbox": [24.61975, 60.299039999999984, 24.61975, 60.299039999999984], "geometry": {"coordinates": [24.61975, 60.299039999999984], "type": "Point"}, "id": "141218", "properties": {"dev-id": "70B3D5705000516A", "name": "Kattilaj\u00e4rvi (Espoo)", "temp_out1": 3.62, "time": "03-12-2020 14:41"}, "type": "Feature"}, {"bbox": [24.852409999999995, 60.160500000000006, 24.852409999999995, 60.160500000000006], "geometry": {"coordinates": [24.852409999999995, 60.160500000000006], "type": "Point"}, "id": "141202", "properties": {"dev-id": "70B3D57050001AF1", "name": "Lauttasaari (Vaskiniemi)", "temp_out1": 1.31, "time": "03-12-2020 14:08"}, "type": "Feature"}], "type": "FeatureCollection"});
         
     
-    geo_json_e44d30be5e234d118481f37630cda357.bindTooltip(
+    geo_json_19399c14502543258a8974b70cb8c291.bindTooltip(
     function(layer){
     let div = L.DomUtil.create('div');
     
@@ -136,8 +139,8 @@
     ,{"className": "foliumtooltip", "sticky": false});
                      
     
-    let name_getter = 'geo_json_e44d30be5e234d118481f37630cda357';
-    geo_json_e44d30be5e234d118481f37630cda357.bindPopup(
+    let name_getter = 'geo_json_19399c14502543258a8974b70cb8c291';
+    geo_json_19399c14502543258a8974b70cb8c291.bindPopup(
     function(layer){
     let div = L.DomUtil.create('div');
     
